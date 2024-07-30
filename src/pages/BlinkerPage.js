@@ -6,17 +6,17 @@ const BlinkerPage = () => {
     const navigate = useNavigate();
     const [timeLeft, setTimeLeft] = useState(20); // Set initial time to 50 seconds
 
-    useEffect(() => {
-        if (timeLeft === 0) {
-            navigate('/exam'); // Navigate to /exam when timer reaches 0
-        }
+    // useEffect(() => {
+    //     if (timeLeft === 0) {
+    //         navigate('/exam'); // Navigate to /exam when timer reaches 0
+    //     }
 
-        const timer = setTimeout(() => {
-            setTimeLeft(timeLeft - 1);
-        }, 1000);
+    //     const timer = setTimeout(() => {
+    //         setTimeLeft(timeLeft - 1);
+    //     }, 1000);
 
-        return () => clearTimeout(timer);
-    }, [timeLeft, navigate]);
+    //     return () => clearTimeout(timer);
+    // }, [timeLeft, navigate]);
 
     return (
         <>

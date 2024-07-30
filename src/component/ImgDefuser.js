@@ -1,6 +1,7 @@
+
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
-import '../css/imgdefuser.css'
+import '../css/imgdefuser.css';
 
 const ImgDefuser = () => {
   return (
@@ -14,7 +15,7 @@ const shuffle = (array) => {
   let currentIndex = array.length,
     randomIndex;
 
-  while (currentIndex != 0) {
+  while (currentIndex !== 0) {
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex--;
 
@@ -28,70 +29,31 @@ const shuffle = (array) => {
 };
 
 const squareData = [
-    {
-        id: 1,
-        src: "https://images.unsplash.com/photo-1547347298-4074fc3086f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-      },
-      {
-        id: 2,
-        src: "https://images.unsplash.com/photo-1510925758641-869d353cecc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-      },
-      {
-        id: 3,
-        src: "https://images.unsplash.com/photo-1629901925121-8a141c2a42f4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-      },
-      {
-        id: 4,
-        src: "https://images.unsplash.com/photo-1580238053495-b9720401fd45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-      },
-      {
-        id: 5,
-        src: "https://images.unsplash.com/photo-1569074187119-c87815b476da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1325&q=80",
-      },
-      {
-        id: 6,
-        src: "https://images.unsplash.com/photo-1556817411-31ae72fa3ea0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-      },
-      {
-        id: 7,
-        src: "https://images.unsplash.com/photo-1599586120429-48281b6f0ece?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-      },
-      {
-        id: 8,
-        src: "https://plus.unsplash.com/premium_photo-1671436824833-91c0741e89c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-      },
-      {
-        id: 9,
-        src: "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
-      },
-      {
-        id: 10,
-        src: "https://images.unsplash.com/photo-1610768764270-790fbec18178?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-      },
-      {
-        id: 11,
-        src: "https://images.unsplash.com/photo-1507034589631-9433cc6bc453?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=684&q=80",
-      },
-      {
-        id: 12,
-        src: "https://images.unsplash.com/photo-1533107862482-0e6974b06ec4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=882&q=80",
-      },
-      {
-        id: 13,
-        src: "https://images.unsplash.com/photo-1560089000-7433a4ebbd64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      },
-      {
-        id: 14,
-        src: "https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80",
-      },
-      {
-        id: 15,
-        src: "https://images.unsplash.com/photo-1606244864456-8bee63fce472?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=681&q=80",
-      },
-      {
-        id: 16,
-        src: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1820&q=80",
-      }
+  { id: 1, text: "<h1>", bgColor: "#FF5733" },
+  { id: 2, text: "<div>", bgColor: "#33FF57" },
+  { id: 3, text: "<i>", bgColor: "#3357FF" },
+  { id: 4, text: "<form>", bgColor: "#F0E68C" },
+  { id: 5, text: "<delete>", bgColor: "#D2691E" },
+  { id: 6, text: "<table>", bgColor: "#8A2BE2" },
+  { id: 7, text: "<br>", bgColor: "#5F9EA0" },
+  { id: 8, text: "<sup>", bgColor: "#FF4500" },
+  { id: 9, text: "<ul>", bgColor: "#DA70D6" },
+  { id: 10, text: "<li>", bgColor: "#FF1493" }, 
+  { id: 11, text: "<ol>", bgColor: "#7FFF00" },
+  { id: 12, text: "<u>", bgColor: "#FFD700" },
+  { id: 13, text: "<link>", bgColor: "#4B0082" },
+  { id: 14, text: "<img>", bgColor: "#FF6347" },
+  { id: 15, text: "Ctrl+W", bgColor: "#4682B4" },
+  { id: 16, text: "Win+Tab:", bgColor: "#2E8B57" },
+  { id: 17, text: "Ctrl+Shift+T", bgColor: "#FFA500" },
+  { id: 18, text: "Ctrl+Shift+B ", bgColor: "#FF69B4" },
+  { id: 19, text: "Alt+F4", bgColor: "#CD5C5C" },
+  { id: 20, text: "Ctrl+U", bgColor: "#8B0000" },
+  { id: 21, text: "Ctrl+I", bgColor: "#00CED1" },
+  { id: 22, text: "Ctrl+E", bgColor: "#9400D3" },
+  { id: 23, text: "Win+X", bgColor: "#00FF7F" },
+  { id: 24, text: "Alt+D", bgColor: "#00008B" },
+  { id: 25, text: "Ctrl+L", bgColor: "#A52A2A" },
 ];
 
 const generateSquares = () => {
@@ -102,9 +64,11 @@ const generateSquares = () => {
       transition={{ duration: 1.5, type: "spring" }}
       className="square"
       style={{
-        backgroundImage: `url(${sq.src})`,
+        backgroundColor: sq.bgColor,
       }}
-    ></motion.div>
+    >
+      {sq.text}
+    </motion.div>
   ));
 };
 

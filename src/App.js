@@ -4,6 +4,7 @@ import BlinkerPage from './pages/BlinkerPage';
 import HomePage from './pages/HomePage';
 import Exam from './pages/Exam';
 import Result from './pages/Result';
+import Secreat from './pages/secreat';
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
           <Route path='/blinker' element={<BlinkerPage/>}/>
           <Route path='/exam' element={<Exam/>}/>
           <Route path='/result' element={<Result/>}/>
+          <Route path='/secreat' element={<Secreat/>}/>
         </Routes>
       </BrowserRouter>
     </>
