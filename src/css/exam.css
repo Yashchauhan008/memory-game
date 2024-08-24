@@ -1,0 +1,146 @@
+/* .exam{
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90vw;
+}
+.input {
+    border-radius: 10px;
+    outline: 2px solid #2b86c5;
+    border: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #e2e2e2;
+    outline-offset: 3px;
+    padding: 10px 1rem;
+    transition: 0.25s;
+    margin: 10px;
+  }
+  
+  .input:focus {
+    outline-offset: 5px;
+    background-color: #fff
+  } */
+
+  .exam {
+    height: 100vh;
+    overflow-y: auto;
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90vw;
+    height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .input-wrapper {
+    position: relative; /* Establishes positioning context for pseudo-element */
+    margin-left: 50px; 
+    width: 300px;
+    margin-bottom: 20px;
+  } 
+  
+  .input {
+    text-align: center;
+    position: relative; /* Allows the input to sit above the pseudo-element */
+    z-index: 1; /* Ensure the input field is above the pseudo-element */
+    border-radius: 10px;
+    border: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-image: linear-gradient(225deg, #a8dbff 0%, #9e76c1 50%,#f398cb 100%); */
+    background-color: #2b2834;
+    padding: 10px 0px;
+    transition: 0.25s;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    width: 100%; /* Ensures input takes full width of the wrapper */
+}
+
+.input-wrapper::before {
+    content: "";
+    position: absolute;
+    top: -3px; /* Adjusts the outline thickness */
+    left: -5px;
+    right: -5px;
+    bottom: -3px;
+    border-radius: 12px; /* Slightly more than input border-radius to create outline effect */
+    background-image: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+    z-index: 0; /* Positioned behind the input field */
+    opacity: calc(70%);
+  }
+  
+  .input:focus {
+    background-color: #4f4961;
+    outline: none;
+  }
+  
+  /* From Uiverse.io by JaydipPrajapati1910 */ 
+button {
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #784ba0;
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: #784ba0;
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+  }
+  
+  button span {
+    margin: 10px;
+  }
+  
+  button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+  }
+  
+  button:hover {
+    color: #fff;
+    border: 1px solid #784ba0;
+  }
+  
+  button:hover::before {
+    box-shadow: inset 0 0 0 10em #784ba0;
+  }

@@ -54,6 +54,7 @@
 // export default Result;
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import '../css/result.css'
 
 const Result = () => {
   const navigate = useNavigate();
@@ -66,6 +67,10 @@ const Result = () => {
   const [score, setScore] = useState(0);
   const [checkedValues, setCheckedValues] = useState([]);
 
+
+  var teamName = (localStorage.getItem("teamName"));
+
+
   useEffect(() => {
     const storedCheckedValues = JSON.parse(localStorage.getItem("checkedValues")) || [];
     setCheckedValues(storedCheckedValues);
@@ -76,15 +81,33 @@ const Result = () => {
 
   return (
     <>
-      <button onClick={() => navigate("/exam")}>Back</button>
-      <div>Result</div>
-      <div>Your score is: {score} / {solution.length}</div>
-      <div>
+    <div className="result">
+      <h3>{teamName}</h3>
+
+      {/* <button onClick={() => navigate("/exam")}>Back</button> */}
+      {/* <div>Result</div> */}
+
+      <h1>Your score 🏆</h1>
+      <div>{score}</div>
+      {/* <div>
         Checked Values: {checkedValues.join(", ")}
-      </div>
-      <div>
+      </div> */}
+      {/* <div>
         Solution: {solution.join(", ")}
-      </div>
+      </div> */}
+    </div>
+      <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
     </>
   );
 };

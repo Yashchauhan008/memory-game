@@ -1,5 +1,6 @@
 
   .hero-section {
+    z-index: 1000;
     width: 100vw;
     padding: 3rem 0rem;
     display: flex;
@@ -82,7 +83,7 @@
   
   .square {
     border-radius: 10px;
-    width: 200px;
+    width: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,41 +91,11 @@
     font-size: 1.5rem;
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
   }
   
-
-
-  /* ---------------------------------------------------- */
-  /* .toggle-button {
-    height: 100px;
-    width: 500px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 0.25rem;
-    font-size: 1rem;
-    font-weight: bold;
-    color: black;
-    background-color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
   
-  .toggle-button.checked {
-    background-color: green;
-    color: white;
-  }
-  
-  ----------------------------------------------
-  .toggle-set{
-    background-color: red;
-    height: 400px;
-    width: 100px;
-
-  } */
-   .grid-container {
+  .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 150px); /* 6 columns of 100px width each */
   gap: 1rem; /* Gap between grid items */
