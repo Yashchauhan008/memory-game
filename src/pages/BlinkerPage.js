@@ -8,7 +8,7 @@ const BlinkerPage = () => {
 
   useEffect(() => {
       if (timeLeft === 0) {
-          navigate('/exam'); // Navigate to /exam when timer reaches 0
+          navigate('/exam'); 
       }
 
       const timer = setTimeout(() => {
@@ -24,7 +24,7 @@ const BlinkerPage = () => {
             <button onClick={() => navigate('/exam')}>Next</button> */}
       <ImgDefuser />
       <div className="timer">{timeLeft} seconds</div>
-      {/* <ul class="circles">
+      <ul class="circles">
         <li></li>
         <li></li>
         <li></li>
@@ -35,7 +35,7 @@ const BlinkerPage = () => {
         <li></li>
         <li></li>
         <li></li>
-      </ul> */}
+      </ul>
     </>
   );
 };

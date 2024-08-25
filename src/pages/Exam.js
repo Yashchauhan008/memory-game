@@ -179,7 +179,6 @@ const Exam = () => {
           <span>Complete</span>
         </button>
         {/* <button onClick={handleNext}>Complete</button> */}
-      </div>
       <ul className="circles">
         <li></li>
         <li></li>
@@ -193,6 +192,7 @@ const Exam = () => {
         <li></li>
         <li></li>
       </ul>
+      </div>
     </>
   );
 };
