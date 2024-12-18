@@ -56,30 +56,30 @@ const shuffle = (array) => {
 // ];
 
 const squareData = [
-  { id: 1, text: "<h1>", bgColor: "#DA70D6" },   // Replaced with a pinkish purple
-  { id: 2, text: "<div>", bgColor: "#9400D3" },  // Dark purple
-  { id: 3, text: "<i>", bgColor: "#FF69B4" },    // Hot pink
-  { id: 4, text: "<form>", bgColor: "#BA55D3" }, // Medium orchid
-  { id: 5, text: "<delete>", bgColor: "#FF1493" }, // Deep pink
-  { id: 6, text: "<table>", bgColor: "#9370DB" }, // Medium purple
-  { id: 7, text: "<br>", bgColor: "#D8BFD8" },   // Thistle
-  { id: 8, text: "<sup>", bgColor: "#DA70D6" },  // Orchid
-  { id: 9, text: "<ul>", bgColor: "#EE82EE" },   // Violet
-  { id: 10, text: "<li>", bgColor: "#DDA0DD" },  // Plum
-  { id: 11, text: "<ol>", bgColor: "#FF00FF" },  // Magenta
-  { id: 12, text: "<u>", bgColor: "#8B008B" },   // Dark magenta
-  { id: 13, text: "<link>", bgColor: "#C71585" }, // Medium violet red
-  { id: 14, text: "<img>", bgColor: "#DB7093" }, // Pale violet red
-  { id: 15, text: "Ctrl+W", bgColor: "#DA70D6" }, // Repeated color for theme consistency
-  { id: 16, text: "Win+Tab:", bgColor: "#9400D3" }, // Dark purple
-  { id: 17, text: "Ctrl+Shift+T", bgColor: "#FF69B4" }, // Hot pink
-  { id: 18, text: "Ctrl+Shift+B", bgColor: "#BA55D3" }, // Medium orchid
-  { id: 19, text: "Alt+F4", bgColor: "#FF1493" }, // Deep pink
-  { id: 20, text: "Ctrl+U", bgColor: "#9370DB" }, // Medium purple
+  { id: 1, text: "<th>", bgColor: "#DA70D6" },   // Replaced with a pinkish purple
+  { id: 2, text: "<u>", bgColor: "#9400D3" },  // Dark purple
+  { id: 3, text: "<img>", bgColor: "#FF69B4" },    // Hot pink
+  { id: 4, text: "<i>", bgColor: "#BA55D3" }, // Medium orchid
+  { id: 5, text: "<b>", bgColor: "#FF1493" }, // Deep pink
+  { id: 6, text: "<button>", bgColor: "#9370DB" }, // Medium purple
+  { id: 7, text: "<dd>", bgColor: "#D8BFD8" },   // Thistle
+  { id: 8, text: "<form>", bgColor: "#DA70D6" },  // Orchid
+  { id: 9, text: "<table>", bgColor: "#EE82EE" },   // Violet
+  { id: 10, text: "<delete>", bgColor: "#DDA0DD" },  // Plum
+  { id: 11, text: "<br>", bgColor: "#FF00FF" },  // Magenta
+  { id: 12, text: "<sup>", bgColor: "#8B008B" },   // Dark magenta
+  { id: 13, text: "<ul>", bgColor: "#C71585" }, // Medium violet red
+  { id: 14, text: "<ol>", bgColor: "#DB7093" }, // Pale violet red
+  { id: 15, text: "<li>", bgColor: "#DA70D6" }, // Repeated color for theme consistency
+  { id: 16, text: "Ctrl+W:", bgColor: "#9400D3" }, // Dark purple
+  { id: 17, text: "Win+Tab", bgColor: "#FF69B4" }, // Hot pink
+  { id: 18, text: "Ctrl+Shift+T", bgColor: "#BA55D3" }, // Medium orchid
+  { id: 19, text: "Ctrl+Shift+B", bgColor: "#FF1493" }, // Deep pink
+  { id: 20, text: "Alt+F4", bgColor: "#9370DB" }, // Medium purple
   { id: 21, text: "Ctrl+I", bgColor: "#D8BFD8" }, // Thistle
-  { id: 22, text: "Ctrl+E", bgColor: "#DA70D6" }, // Orchid
-  { id: 23, text: "Win+X", bgColor: "#EE82EE" },  // Violet
-  { id: 24, text: "Alt+D", bgColor: "#DDA0DD" },  // Plum
+  { id: 22, text: "Ctrl+U", bgColor: "#DA70D6" }, // Orchid
+  { id: 23, text: "Ctrl+E", bgColor: "#EE82EE" },  // Violet
+  { id: 24, text: "Win+X", bgColor: "#DDA0DD" },  // Plum
   { id: 25, text: "Ctrl+L", bgColor: "#FF00FF" }, // Magenta
 ];
 
